@@ -1,4 +1,11 @@
 def main():
 	txt = input("digite a palavra :")
-	for i in range(len(txt)):
-		
+	aux = ""
+	for i in range(len(txt)-1,-1,-1):
+		aux +=txt[i]
+	if txt == aux:
+		print(f"{txt} é um palindromos")
+	else:
+		print(f"{txt} não é um palindromos")
+main()
+
