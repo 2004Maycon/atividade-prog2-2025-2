@@ -1,0 +1,19 @@
+def F_uniao(a,b):
+	uniao = []
+	for elemento in a:		
+		uniao.append(elemento)
+	for elemento  in b:
+		if elemento not in uniao:
+			uniao.append(elemento)
+	return uniao
+
+def main():
+	lista1 = (1,2,3,4,6,8)
+	lista2= (1,4,5,8,7,6,4,9,10)
+	uniao = F_uniao(lista1,lista2)
+	print(lista1)
+	print(lista2)
+	print(uniao)
+	print()
+	return 0
+main()
